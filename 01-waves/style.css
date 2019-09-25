@@ -1,0 +1,76 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+.waves-group{
+    position: relative;
+    width: 100vw;
+    height: 300px;
+    background: #bd83ce;
+    overflow: hidden;
+}
+
+.waves{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    background: url('wave-01.svg');
+    background-size: 100px 100px;
+}
+
+.one{
+    z-index: 3;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+    animation: one-movment 30s linear infinite;
+}
+
+@keyframes one-movment{
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-postion-x: 1000px;
+    }
+}
+
+.two{
+    z-index: 2;
+    opacity: 0.8;
+    animation-delay: -6s;
+    bottom: 10px;
+    animation: two-movement 15s linear infinite;
+}
+
+@keyframes two-movement{
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+.three{
+    z-index: 1;
+    opacity: 0.5;
+    animation-delay: -2s;
+    bottom: 15px;
+    animation: three-movement 20s linear infinite;
+}
+
+@keyframes three-movement{
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
